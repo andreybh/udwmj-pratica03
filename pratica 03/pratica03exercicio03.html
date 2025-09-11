@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica 03 Exercicio 03</title>
+    <link rel="stylesheet" href="pratica03exercicio03.css">
+</head>
+
+<body>
+    <script>
+        var n1 = prompt("Informe o 1 número: ");
+        var n2 = prompt("Informe o 2 número: ");
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        var soma = n1 + n2;
+        var subtracao = n1 - n2;
+        var multiplicacao = n1 * n2;
+        var divisao = n1 / n2;
+        var resto = n1 % n2;
+
+        document.write("<div class = 'numero'> Primeiro numero: " + n1 + " .</div>");
+        document.write("<div class = 'numero'> Segundo numero: " + n2 + " .</div>");
+
+        document.write("<div id = 'soma'> soma: " + soma + " .</div>");
+        document.write("<div id = 'subtracao'> subtracao: " + subtracao + " .</div>");
+        document.write("<div id = 'multiplicacao'> multiplicacao: " + multiplicacao + " .</div>");
+        document.write("<div id = 'divisao'> divisao: " + divisao + " .</div>");
+        document.write("<div id = 'resto'> resto: " + resto + " .</div>");
+    </script>
+
+</body>
+
+</html>
