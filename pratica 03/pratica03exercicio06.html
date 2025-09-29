@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="pratica03exercicio06.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Juros Compostos</h1>
+        <div class="calculator">
+            <form id="jurosForm">
+                <div class="input-group">
+                    <label for="capital">Capital Inicial (R$):</label>
+                    <input type="number" id="capital" step="0.01" min="0" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="taxa">Taxa de Juros (% ao período):</label>
+                    <input type="number" id="taxa" step="0.01" min="0" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="tempo">Tempo (períodos):</label>
+                    <input type="number" id="tempo" step="1" min="1" required>
+                </div>
+                
+                <button type="submit">Calcular</button>
+                <button type="button" id="limpar">Limpar</button>
+            </form>
+            
+            <div id="resultado" class="resultado">
+                <h2>Resultado:</h2>
+                <div class="resultado-item">
+                    <span class="label">Capital Inicial:</span>
+                    <span id="capitalResultado" class="valor">R$ 0,00</span>
+                </div>
+                <div class="resultado-item">
+                    <span class="label">Juros Acumulados:</span>
+                    <span id="jurosResultado" class="valor">R$ 0,00</span>
+                </div>
+                <div class="resultado-item destaque">
+                    <span class="label">Montante Final:</span>
+                    <span id="montanteResultado" class="valor">R$ 0,00</span>
+                </div>
+            </div>
+            
+            <div class="formula">
+                <h3>Fórmula Utilizada:</h3>
+                <p><strong>M = C × (1 + i)^t</strong></p>
+                <p>Onde:</p>
+                <ul>
+                    <li><strong>M</strong> = Montante final</li>
+                    <li><strong>C</strong> = Capital inicial</li>
+                    <li><strong>i</strong> = Taxa de juros (decimal)</li>
+                    <li><strong>t</strong> = Tempo (períodos)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="pratica03exercicio06.js"></script>
+</body>
+</html>
+
